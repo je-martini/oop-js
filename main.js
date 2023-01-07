@@ -36,3 +36,24 @@ const juanita = new student(
         "curso4", 'curso5'
     ],
 );
+
+class student2 {
+    constructor(name, age, curso_aprob){
+        this.name = name;
+        this.age = age;
+        this.curso_aprob = curso_aprob;
+    }
+    aprobar_curso(new_course){
+        this.curso_aprob.push(new_course)
+
+    }
+}
+
+const miguel = new student2(
+    "Miguel",
+    28,
+    [
+        'curso1-1', 
+        "curso2-2",
+    ],
+)
