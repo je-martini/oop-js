@@ -38,7 +38,13 @@ const juanita = new student(
 );
 
 class student2 {
-    constructor(name, age, curso_aprob){
+    constructor({
+        name, 
+        age, 
+        curso_aprob = [],
+        email,
+
+        }){
         this.name = name;
         this.age = age;
         this.curso_aprob = curso_aprob;
@@ -50,10 +56,18 @@ class student2 {
 }
 
 const miguel = new student2(
-    "Miguel",
     28,
+    "Miguel",
     [
         'curso1-1', 
         "curso2-2",
-    ],
+    ], 
+)
+
+const miguel2 = new student2(
+    {
+        age: 28,
+    name: "miguel2",
+    curso_aprob: ["curso4-4"],
+    }
 )
